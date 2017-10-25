@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Free Bulma template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.6.0 -->
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+  <nav class="navbar is-black">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        Bulma Admin          
+      </a>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item is-hoverable" href="#">
+          <span class="icon">
+            <i class="fa fa-envelope-o"></i>
+            <span class="tag expo is-success">2</span>
+          </span>
+          <div class="navbar-dropdown is-active">
+            <div class="navbar-item">
+              You have 2 messages
+            </div>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="#">
+              First message
+            </a>
+            <a class="navbar-item" href="#">
+              Second message
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item is-hoverable" href="#">
+          <span class="icon">
+            <i class="fa fa-bell-o"></i>
+            <span class="tag expo is-warning">3</span>
+          </span>
+          <div class="navbar-dropdown is-active">
+            <div class="navbar-item">
+              You have 3 notifications
+            </div>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="#">
+              First notification
+            </a>
+            <a class="navbar-item" href="#">
+              Second notification
+            </a>
+            <a class="navbar-item" href="#">
+              Third notification
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item is-hoverable" href="#">
+          <span class="icon">
+            <i class="fa fa-flag-o"></i>
+            <span class="tag expo is-danger">2</span>
+          </span>
+          <div class="navbar-dropdown is-active">
+            <div class="navbar-item">
+              You have 2 tasks
+            </div>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="#">
+              Make this
+            </a>
+            <a class="navbar-item" href="#">
+              Make that
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable" href="#">
+          <a class="navbar-link">
+            Marc Twain
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">
+              Profile
+            </a>
+            <a class="navbar-item" href="#">
+              Sign out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="columns">
+    <nav id="lateral" class="column is-2">
+      <div class="menu">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a class="is-active">Dashboard</a></li>
+          <li><a>Users</a></li>
+          <li><a>Posts</a></li>
+        </ul>
+        <p class="menu-label">
+          Transactions
+        </p>
+        <ul class="menu-list">
+          <li><a>Payments</a></li>
+          <li><a>Transfers</a></li>
+          <li><a>Balance</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="column is-10">        
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="../">Bulma</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
+        </ul>
+      </nav>
+      <article class="message is-warning">
+        <div class="message-header">
+          <p>Warning</p>
+          <button class="delete" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+        It's an alert !
+        </div>
+      </article>
+
+      <section>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box notification is-primary">
+              <span class="fa fa-user-o"></span>
+              <p class="title">423</p>
+              <p class="subtitle">New members</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box notification is-warning">
+              <span class="fa fa-file-text-o"></span>
+              <p class="title">15</p>
+              <p class="subtitle">New posts</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box notification is-danger">
+              <span class="fa fa-money"></span>
+              <p class="title">28</p>
+              <p class="subtitle">New Orders</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Form</p>
+              <hr>
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Text input">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </div>
+                <p class="help is-success">This username is available</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-warning"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Select dropdown</option>
+                      <option>With options</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    I agree to the <a href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-text">Cancel</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="tile is-parent is-vertical">
+            <article class="box">
+              <p class="title">Progress</p>
+              <progress class="progress is-primary" value="15" max="100">30%</progress>
+              <progress class="progress is-link" value="30" max="100">30%</progress>
+              <progress class="progress is-info" value="45" max="100">45%</progress>
+              <progress class="progress is-success" value="60" max="100">60%</progress>
+              <progress class="progress is-warning" value="75" max="100">75%</progress>
+              <progress class="progress is-danger" value="90" max="100">90%</progress>
+            </article>
+            <article class="box">
+              <p class="title">Table</p>
+              <table class="table is-striped is-narrow">
+                <tbody>
+                  <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                  </tr>
+                  <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                  </tr>
+                  <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                  </tr>
+                  <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
